@@ -26,6 +26,7 @@ app.post("/api/v1/quiz", function (req, res) {
   res.send(answer);
 });
 
-app.listen(3000, function () {
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, function () {
   console.log("Server is running");
 });
